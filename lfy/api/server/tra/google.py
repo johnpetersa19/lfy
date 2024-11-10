@@ -1,5 +1,4 @@
-"""谷歌翻译接口
-"""
+"""谷歌翻译接口"""
 import base64
 import random
 from gettext import gettext as _
@@ -12,8 +11,7 @@ from lfy.api.utils.debug import get_logger
 
 
 def _get_session():
-    """初始化请求
-    """
+    """Inicializa uma sessão de requisição"""
     r1 = random.randint(10, 100)
     r2 = random.randint(111111111, 999999999)
     r3 = random.randint(5, 11)
@@ -27,20 +25,59 @@ def _get_session():
 
 
 class GoogleServer(Server):
-    """google翻译
-    """
+    """google翻译"""
 
     def __init__(self):
-
-        # https://cloud.google.com/translate/docs/languages
+        
         lang_key_ns = {
-            "zh": 1,
-            "en": 3,
-            "ja": 4,
-            "ko": 5,
-            "de": 6,
-            "fr": 7,
-            "it": 8,
+            "zh": 1,      # Chinês
+            "en": 3,      # Inglês
+            "ja": 4,      # Japonês
+            "ko": 5,      # Coreano
+            "de": 6,      # Alemão
+            "fr": 7,      # Francês
+            "it": 8,      # Italiano
+            "pt-BR": 9,   # Português (Brasil) 
+            "es": 10,     # Espanhol
+            "ru": 11,     # Russo
+            "ar": 12,     # Árabe
+            "hi": 13,     # Hindi
+            "bn": 14,     # Bengali
+            "pt-PT": 15,  # Português (Portugal)
+            "tr": 16,     # Turco
+            "vi": 17,     # Vietnamita
+            "ur": 18,     # Urdu
+            "id": 19,     # Indonésio
+            "th": 20,     # Tailandês
+            "mr": 21,     # Marathi
+            "te": 22,     # Telugu
+            "ta": 23,     # Tamil
+            "gu": 24,     # Gujarati
+            "kn": 25,     # Kannada
+            "ml": 26,     # Malayalam
+            "pa": 27,     # Punjabi
+            "or": 28,     # Odia
+            "my": 29,     # Birmanês
+            "pl": 30,     # Polonês
+            "uk": 31,     # Ucraniano
+            "nl": 32,     # Holandês
+            "sv": 33,     # Sueco
+            "fi": 34,     # Finlandês
+            "no": 35,     # Norueguês
+            "da": 36,     # Dinamarquês
+            "hu": 37,     # Húngaro
+            "cs": 38,     # Tcheco
+            "ro": 39,     # Romeno
+            "el": 40,     # Grego
+            "sw": 41,     # Swahili
+            "ha": 42,     # Hausa
+            "yo": 43,     # Yoruba
+            "zu": 44,     # Zulu
+            "am": 45,     # Amárico
+            "ig": 46,     # Igbo
+            "af": 47,     # Afrikaans
+            "ca": 48,     # Catalão
+            "tl": 49,     # Tagalog
         }
         super().__init__("google", _("google"), lang_key_ns, session=_get_session())
         self.can_translate = True
@@ -62,9 +99,11 @@ class GoogleServer(Server):
 
         text = text.replace("#", "")
         url = 'https://translate.google.com/translate_a/t'
-        params = {'tl': lang_to, 'sl': lang_from, 'ie': 'UTF-8',
-                  'oe': 'UTF-8', 'client': 'at', 'dj': '1',
-                  'format': "html", 'v': "1.0"}
+        params = {
+            'tl': lang_to, 'sl': lang_from, 'ie': 'UTF-8',
+            'oe': 'UTF-8', 'client': 'at', 'dj': '1',
+            'format': "html", 'v': "1.0"
+        }
 
         try:
             response = self.session.post(url, params=params, data={'q': text}, timeout=TIME_OUT)
