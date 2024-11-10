@@ -1,5 +1,4 @@
-"""谷歌翻译接口
-"""
+"""谷歌翻译接口"""
 import random
 import re
 from gettext import gettext as _
@@ -31,7 +30,7 @@ def _init_session():
     if match:
         params = match.group(1)
         key, token, _time = [p.strip('"').replace('[', '') \
-                                 .replace(']', '') for p in params.split(',')]
+                             .replace(']', '') for p in params.split(',')]
         session.headers.update({'key': key, 'token': token})
     match = re.search(r'IG:"(\w+)"', content)
 
@@ -43,20 +42,59 @@ def _init_session():
 
 
 class BingServer(Server):
-    """bing翻译，无需apikey
-    """
+    """bing翻译，无需apikey"""
 
     def __init__(self):
-
-        # https://learn.microsoft.com/zh-cn/azure/ai-services/translator/language-support
+       
         lang_key_ns = {
-            "zh-Hans": 1,
-            "en": 3,
-            "ja": 4,
-            "ko": 5,
-            "de": 6,
-            "fr": 7,
-            "it": 8,
+            "zh-Hans": 1,   # Chinês simplificado
+            "en": 3,        # Inglês
+            "ja": 4,        # Japonês
+            "ko": 5,        # Coreano
+            "de": 6,        # Alemão
+            "fr": 7,        # Francês
+            "it": 8,        # Italiano
+            "pt-BR": 9,     # Português (Brasil)
+            "es": 10,       # Espanhol
+            "ru": 11,       # Russo
+            "ar": 12,       # Árabe
+            "hi": 13,       # Hindi
+            "bn": 14,       # Bengali
+            "pt-PT": 15,    # Português (Portugal)
+            "tr": 16,       # Turco
+            "vi": 17,       # Vietnamita
+            "ur": 18,       # Urdu
+            "id": 19,       # Indonésio
+            "th": 20,       # Tailandês
+            "mr": 21,       # Marathi
+            "te": 22,       # Telugu
+            "ta": 23,       # Tamil
+            "gu": 24,       # Gujarati
+            "kn": 25,       # Kannada
+            "ml": 26,       # Malayalam
+            "pa": 27,       # Punjabi
+            "or": 28,       # Odia
+            "my": 29,       # Birmanês
+            "pl": 30,       # Polonês
+            "uk": 31,       # Ucraniano
+            "nl": 32,       # Holandês
+            "sv": 33,       # Sueco
+            "fi": 34,       # Finlandês
+            "no": 35,       # Norueguês
+            "da": 36,       # Dinamarquês
+            "hu": 37,       # Húngaro
+            "cs": 38,       # Tcheco
+            "ro": 39,       # Romeno
+            "el": 40,       # Grego
+            "sw": 41,       # Swahili
+            "ha": 42,       # Hausa
+            "yo": 43,       # Yoruba
+            "zu": 44,       # Zulu
+            "am": 45,       # Amárico
+            "ig": 46,       # Igbo
+            "af": 47,       # Afrikaans
+            "ca": 48,       # Catalão
+            "tl": 49,       # Tagalog
         }
         super().__init__("bing", _("bing"), lang_key_ns)
         self.can_translate = True
@@ -119,17 +157,13 @@ class BingServer(Server):
             return True, res[0]["translations"][0]["text"]
 
         if isinstance(res, dict):
-
             if 'ShowCaptcha' in res.keys():
                 self.session = _init_session()
                 print("bing-ShowCaptcha", n)
                 return self.translate_text(text, lang_to, lang_from, n + 1)
 
-            if 'statusCode' in res.keys():
-                if res['statusCode'] == 400:
-                    res['errorMessage'] \
-                        = _('1000 characters limit! You send {len_text} characters.') \
-                        .format(len_text=len(text))
+            if 'statusCode' in res.keys() and res['statusCode'] == 400:
+                res['errorMessage'] = _('1000 characters limit! You send {len_text} characters.').format(len_text=len(text))
                 return False, res["errorMessage"]
 
         return False, str(res)
