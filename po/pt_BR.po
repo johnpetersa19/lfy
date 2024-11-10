@@ -1,0 +1,436 @@
+# Traduções em português (Brasil) para o pacote com.ldr.lt
+# Copyright (C) 2023 yuhldr
+# Este arquivo é distribuído sob a mesma licença que o pacote com.ldr.lt.
+# John Peter Sa <johnpetersa@outlook.pt>, 2024.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: cool.ldr.lfy\n"
+"Report-Msgid-Bugs-To: yuhldr@gmail.com\n"
+"POT-Creation-Date: 2024-10-10 00:03+0800\n"
+"PO-Revision-Date: 
+"Last-Translator: <johnpetersa@outlook.pt>\n"
+"Language-Team: Português-Brasil <>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/cool.ldr.lfy.in.in.desktop:3 data/cool.ldr.lfy.in.appdata.xml:4
+#: lfy/main.py:73 data/resources/translate.ui:112
+msgid "lfy"
+msgstr "lfy"
+
+#: data/cool.ldr.lfy.in.metainfo.xml:6 data/cool.ldr.lfy.in.appdata.xml:5
+msgid "Translation software for gnome"
+msgstr "Software de tradução para GNOME"
+
+#: data/cool.ldr.lfy.in.metainfo.xml:8 data/cool.ldr.lfy.in.appdata.xml:7
+msgid ""
+"An easy and pleasant way to translate. Support many translation services. "
+"Especially suitable for document translation."
+msgstr ""
+"Uma forma fácil e agradável de traduzir. Suporta vários serviços de tradução. "
+"Particularmente adequado para tradução de documentos."
+
+#: data/cool.ldr.lfy.in.appdata.xml:36
+msgid "add shortcut"
+msgstr "adicionar atalho"
+
+#: data/cool.ldr.lfy.in.appdata.xml:37
+msgid "Automatically check for updates"
+msgstr "Verificar atualizações automaticamente"
+
+#: data/cool.ldr.lfy.in.appdata.xml:43
+msgid "Basic functions completed"
+msgstr "Funções básicas concluídas"
+
+#: data/cool.ldr.lfy.in.appdata.xml:48
+msgid "yuh"
+msgstr ""
+
+#: lfy/main.py:79
+msgid "translator_credits"
+msgstr "Albano Battistella <albanobattistella@gmail.com>, 2024"
+
+#: lfy/main.py:80
+msgid "A translation app for GNOME."
+msgstr "Um aplicativo de tradução para GNOME."
+
+#: lfy/main.py:105 data/resources/help-overlay.ui:25
+msgid "Copy detected, translate immediately"
+msgstr "Cópia detectada, traduzir imediatamente"
+
+#: lfy/main.py:108
+msgid "Copy detected, not automatically translated"
+msgstr "Cópia detectada, não traduzida automaticamente"
+
+#: lfy/main.py:131
+msgid "Next translation not remove line breaks"
+msgstr "Próxima tradução não remove quebras de linha"
+
+#: lfy/main.py:132
+msgid "Next translation remove line breaks"
+msgstr "Próxima tradução remove quebras de linha"
+
+#: lfy/main.py:142
+msgid "Next translation without splicing text"
+msgstr "Próxima tradução sem juntar o texto"
+
+#: lfy/main.py:143
+msgid "Next translation splicing text"
+msgstr "Próxima tradução juntando o texto"
+
+#: lfy/main.py:166
+msgid "Image translation is currently not supported"
+msgstr "A tradução de imagens não é suportada no momento"
+
+#: lfy/api/__init__.py:36
+msgid ""
+"Copy automatic translation, it is recommended to pin this window to the top"
+msgstr ""
+"Copia a tradução automática, recomenda-se fixar esta janela no topo"
+
+#: lfy/api/__init__.py:48
+msgid "The connection timed out.\nMaybe there is a network problem"
+msgstr "A conexão expirou.\nTalvez haja um problema de rede"
+
+#: lfy/api/__init__.py:51
+msgid "something error, try other translate engine?"
+msgstr "Algo deu errado, tente outro motor de tradução?"
+
+#: lfy/api/__init__.py:67 lfy/api/__init__.py:91
+msgid "Not supported This Server!"
+msgstr "Este servidor não é suportado!"
+
+#: lfy/api/__init__.py:74
+msgid "save success!"
+msgstr "salvo com sucesso!"
+
+#: lfy/api/base.py:10
+msgid "Automatic"
+msgstr "Automático"
+
+#: lfy/api/base.py:12
+msgid "Chinese"
+msgstr "Chinês"
+
+#: lfy/api/base.py:14
+msgid "Classical Chinese"
+msgstr "Chinês Clássico"
+
+#: lfy/api/base.py:16
+msgid "English"
+msgstr "Inglês"
+
+#: lfy/api/base.py:18
+msgid "Japanese"
+msgstr "Japonês"
+
+#: lfy/api/base.py:20
+msgid "Korean"
+msgstr "Coreano"
+
+#: lfy/api/base.py:22
+msgid "German"
+msgstr "Alemão"
+
+#: lfy/api/base.py:24
+msgid "French"
+msgstr "Francês"
+
+#: lfy/api/base.py:26
+msgid "Italian"
+msgstr "Italiano"
+
+#: lfy/api/base.py:28
+msgid "Portuguese (Brazil)"
+msgstr "Português (Brasil)"
+
+#: lfy/api/base.py:30
+msgid "Spanish"
+msgstr "Espanhol"
+
+#: lfy/api/base.py:32
+msgid "Russian"
+msgstr "Russo"
+
+#: lfy/api/base.py:34
+msgid "Arabic"
+msgstr "Árabe"
+
+#: lfy/api/base.py:36
+msgid "Hindi"
+msgstr "Hindi"
+
+#: lfy/api/base.py:38
+msgid "Bengali"
+msgstr "Bengali"
+
+#: lfy/api/base.py:40
+msgid "Portuguese (Portugal)"
+msgstr "Português (Portugal)"
+
+#: lfy/api/base.py:42
+msgid "Turkish"
+msgstr "Turco"
+
+#: lfy/api/base.py:44
+msgid "Vietnamese"
+msgstr "Vietnamita"
+
+#: lfy/api/base.py:46
+msgid "Urdu"
+msgstr "Urdu"
+
+#: lfy/api/base.py:48
+msgid "Indonesian"
+msgstr "Indonésio"
+
+#: lfy/api/base.py:50
+msgid "Thai"
+msgstr "Tailandês"
+
+#: lfy/api/base.py:52
+msgid "Marathi"
+msgstr "Marata"
+
+#: lfy/api/base.py:54
+msgid "Telugu"
+msgstr "Telugo"
+
+#: lfy/api/base.py:56
+msgid "Tamil"
+msgstr "Tâmil"
+
+#: lfy/api/base.py:58
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: lfy/api/base.py:60
+msgid "Kannada"
+msgstr "Canarim"
+
+#: lfy/api/base.py:62
+msgid "Malayalam"
+msgstr "Malaiala"
+
+#: lfy/api/base.py:64
+msgid "Punjabi"
+msgstr "Punjabi"
+
+#: lfy/api/base.py:66
+msgid "Odia"
+msgstr "Odia"
+
+#: lfy/api/base.py:68
+msgid "Burmese"
+msgstr "Birmanês"
+
+#: lfy/api/base.py:70
+msgid "Polish"
+msgstr "Polonês"
+
+#: lfy/api/base.py:72
+msgid "Ukrainian"
+msgstr "Ucraniano"
+
+#: lfy/api/base.py:74
+msgid "Dutch"
+msgstr "Holandês"
+
+#: lfy/api/base.py:76
+msgid "Swedish"
+msgstr "Sueco"
+
+#: lfy/api/base.py:78
+msgid "Finnish"
+msgstr "Finlandês"
+
+#: lfy/api/base.py:80
+msgid "Norwegian"
+msgstr "Norueguês"
+
+#: lfy/api/base.py:82
+msgid "Danish"
+msgstr "Dinamarquês"
+
+#: lfy/api/base.py:84
+msgid "Hungarian"
+msgstr "Húngaro"
+
+#: lfy/api/base.py:86
+msgid "Czech"
+msgstr "Tcheco"
+
+#: lfy/api/base.py:88
+msgid "Romanian"
+msgstr "Romeno"
+
+#: lfy/api/base.py:90
+msgid "Greek"
+msgstr "Grego"
+
+#: lfy/api/base.py:92
+msgid "Swahili"
+msgstr "Suaíli"
+
+#: lfy/api/base.py:94
+msgid "Hausa"
+msgstr "Hauçá"
+
+#: lfy/api/base.py:96
+msgid "Yoruba"
+msgstr "Iorubá"
+
+#: lfy/api/base.py:98
+msgid "Zulu"
+msgstr "Zulu"
+
+#: lfy/api/base.py:100
+msgid "Amharic"
+msgstr "Amárico"
+
+#: lfy/api/base.py:102
+msgid "Igbo"
+msgstr "Igbo"
+
+#: lfy/api/base.py:104
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: lfy/api/base.py:106
+msgid "Catalan"
+msgstr "Catalão"
+
+#: lfy/api/base.py:108
+msgid "Tagalog"
+msgstr "Tagalo"
+
+#: lfy/api/server/baidu.py:32
+msgid "baidu"
+msgstr "baidu"
+
+#: lfy/api/server/baidu.py:54
+msgid "please input app_id and secret_key like:"
+msgstr "por favor insira app_id e secret_key como:"
+
+#: lfy/api/server/baidu.py:77 lfy/api/server/tencent.py:81
+msgid "please input API Key in preference"
+msgstr "por favor insira a chave API nas preferências"
+
+#: lfy/api/server/baidu.py:118 lfy/api/server/tencent.py:136
+msgid "something error:"
+msgstr "algum erro:"
+
+#: lfy/api/server/google.py:13
+msgid "google"
+msgstr "google"
+
+#: lfy/api/server/tencent.py:30
+msgid "tencent"
+msgstr "tencent"
+
+#: lfy/api/server/tencent.py:57
+msgid "please input secret_id and secret_key like:"
+msgstr "por favor insira secret_id e secret_key como:"
+
+#: data/resources/translate.ui:60
+msgid "Remove symbols such as line breaks"
+msgstr "Remover símbolos como quebras de linha"
+
+#: data/resources/translate.ui:66 data/resources/help-overlay.ui:32
+#: data/resources/help-overlay.ui:39
+msgid "Splice the next copied text with the previous text"
+msgstr "Juntar o próximo texto copiado com o texto anterior"
+
+#: data/resources/translate.ui:72
+msgid "translate"
+msgstr "traduzir"
+
+#: data/resources/translate.ui:99
+msgid "Menu"
+msgstr "Menu"
+
+#: data/resources/translate.ui:123 data/resources/help-overlay.ui:24
+msgid "Copy to translate"
+msgstr "Copiar para traduzir"
+
+#: data/resources/translate.ui:129
+msgid "_Preferences"
+msgstr "_Preferências"
+
+#: data/resources/translate.ui:133
+msgid "_Keyboard Shortcuts"
+msgstr "_Atalhos de Teclado"
+
+#: data/resources/translate.ui:137
+msgid "_About lfy"
+msgstr "_Sobre o lfy"
+
+#: data/resources/server-preferences.ui:13
+msgid "Translate Server"
+msgstr "Servidor de Tradução"
+
+#: data/resources/server-preferences.ui:30
+msgid "how to get API Key"
+msgstr "como obter a chave API"
+
+#: data/resources/server-preferences.ui:37
+msgid "API Key,Pay attention to whether there are dividing lines |"
+msgstr "Chave API, preste atenção se há linhas de divisão |"
+
+#: data/resources/server-preferences.ui:38
+msgid "Enter an API Key for the Server."
+msgstr "Insira uma chave API para o servidor."
+
+#: data/resources/preference.ui:14
+msgid "setup API Key for translation Server, click on the right to the details"
+msgstr ""
+"configure a chave API para o servidor de tradução, clique à direita para obter os detalhes"
+
+#: data/resources/preference.ui:16
+msgid "API Key"
+msgstr "Chave API"
+
+#: data/resources/preference.ui:47
+msgid "auto check update"
+msgstr "verificação automática de atualização"
+
+#: data/resources/preference.ui:55
+msgid "Automatically check for updates when opening software"
+msgstr "Verificar automaticamente se há atualizações ao abrir o software"
+
+#: data/resources/preference.ui:68
+msgid "vpn addr and port, like http://127.0.0.1:7890"
+msgstr "endereço e porta VPN, como http://127.0.0.1:7890"
+
+#: data/resources/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Geral"
+
+#: data/resources/help-overlay.ui:18
+msgid "Translate"
+msgstr "Traduzir"
+
+#: data/resources/help-overlay.ui:31
+msgid "Splice Text"
+msgstr "Juntar Texto"
+
+#: data/resources/help-overlay.ui:38
+msgid "Remove line breaks"
+msgstr "Remover quebras de linha"
+
+#: data/resources/help-overlay.ui:45
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Sair"
+
+#: data/resources/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Mostrar Atalhos"
+
+#~ msgid "No description"
+#~ msgstr "Sem descrição"
