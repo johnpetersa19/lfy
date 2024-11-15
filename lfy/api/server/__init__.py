@@ -1,6 +1,4 @@
-'翻译服务的基础类'
 from gettext import gettext as _
-
 import requests
 
 # select language name
@@ -23,8 +21,89 @@ LANGUAGE_NAMES = [
     _("French"),
     # 8
     _("Italian"),
+    # 9
+    _("Portuguese (Brazil)"),
+    # 10
+    _("Spanish"),
+    # 11
+    _("Russian"),
+    # 12
+    _("Arabic"),
+    # 13
+    _("Hindi"),
+    # 14
+    _("Bengali"),
+    # 15
+    _("Portuguese (Portugal)"),
+    # 16
+    _("Turkish"),
+    # 17
+    _("Vietnamese"),
+    # 18
+    _("Urdu"),
+    # 19
+    _("Indonesian"),
+    # 20
+    _("Thai"),
+    # 21
+    _("Marathi"),
+    # 22
+    _("Telugu"),
+    # 23
+    _("Tamil"),
+    # 24
+    _("Gujarati"),
+    # 25
+    _("Kannada"),
+    # 26
+    _("Malayalam"),
+    # 27
+    _("Punjabi"),
+    # 28
+    _("Odia"),
+    # 29
+    _("Burmese"),
+    # 30
+    _("Polish"),
+    # 31
+    _("Ukrainian"),
+    # 32
+    _("Dutch"),
+    # 33
+    _("Swedish"),
+    # 34
+    _("Finnish"),
+    # 35
+    _("Norwegian"),
+    # 36
+    _("Danish"),
+    # 37
+    _("Hungarian"),
+    # 38
+    _("Czech"),
+    # 39
+    _("Romanian"),
+    # 40
+    _("Greek"),
+    # 41
+    _("Swahili"),
+    # 42
+    _("Hausa"),
+    # 43
+    _("Yoruba"),
+    # 44
+    _("Zulu"),
+    # 45
+    _("Amharic"),
+    # 46
+    _("Igbo"),
+    # 47
+    _("Afrikaans"),
+    # 48
+    _("Catalan"),
+    # 49
+    _("Tagalog"),
 ]
-
 
 class Lang:
     """语言
@@ -180,3 +259,4 @@ class Server:
 
 
 TIME_OUT = 3
+
